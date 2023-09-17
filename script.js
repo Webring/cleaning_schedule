@@ -7,7 +7,7 @@ let date_selector = document.getElementById("date_select")
 
 update_page()
 
-function update_page(to_moment = moment()) {
+function update_page(to_moment = moment(moment().format("YYYY-MM-DD"))) {
     let duration = moment.duration(to_moment - start_date)
     let number_of_weeks = duration.weeks()
 
@@ -33,6 +33,7 @@ document.getElementById("show_datepicker_button").addEventListener("click", func
 })
 
 date_selector.addEventListener("change", function () {
+    console.log(this.value)
     update_page(moment(this.value));
 })
 
