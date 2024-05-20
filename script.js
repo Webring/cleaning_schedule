@@ -1,6 +1,6 @@
-const PEOPLE_LIST = ["Михаил (М)", "Ильдар (М)", "Кирилл (Б)", "Егор (Б)", "Влад (Б)", "Борис (Б)"]
-const START_DATE = "19.12.2022"
-const START_POS = 1
+const PEOPLE_LIST = ["Михаил (М)", "Ильдар (М)", "Кирилл (Б)", "Егор (Б)", "Борис (Б)"]
+const START_DATE = "20.05.2024"
+const START_POS = 3
 
 let start_date = moment(START_DATE, "DD.MM.YYYY").locale("ru").startOf("week")
 let date_selector = document.getElementById("date_select")
